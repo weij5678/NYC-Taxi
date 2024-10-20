@@ -3,7 +3,7 @@ description: "A website showcasing my data analysis project"
 url: "https://<weij5678>.github.io/<US-Weather>/"
 author: Weiran Jiang
 
-theme: minima 
+theme: modernist 
 
 header_pages:
 - data.md
