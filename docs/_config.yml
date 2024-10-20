@@ -1,0 +1,9 @@
+title: "My GitHub Page"
+description: "Welcome to my GitHub Page!"
+theme: minima
+markdown: kramdown
+
+# Optional settings for GitHub Pages
+repository: your-github-username/your-repo-name
+url: "https://your-github-username.github.io"
+
