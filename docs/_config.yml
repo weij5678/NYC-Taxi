@@ -10,8 +10,6 @@ theme: minima # You can replace this with other supported GitHub Pages themes li
 header_pages:
   - Data.md
   - Methodology.md
-  - Results.md
-  - Conclusions.md
   
 # Optional plugins
 plugins:
