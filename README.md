@@ -1,3 +1,2 @@
 You can find the project webpage at the following url
-
-(https://weij5678.github.io/NYC-Taxi/)
+(https://github.com/weij5678/NYC-Taxi.git)
