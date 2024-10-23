@@ -8,10 +8,10 @@ author: Weiran
 theme: minima # You can replace this with other supported GitHub Pages themes like jekyll-theme-cayman, slate, etc.
 
 header_pages:
-  - data.md
-  - methodology.md
-  - results.md
-  - conclusions.md
+  - Data.md
+  - Methodology.md
+  - Results.md
+  - Conclusions.md
   
 # Optional plugins
 plugins:
