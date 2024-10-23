@@ -5,7 +5,7 @@
 This project explores how weather conditions influence taxi or For-Hire Vehicle (FHV) ride-hiring patterns in New York City from 10/15/2023 to 11/15/2023. I aim to visually analyze clusters of pickups across different zones and time periods, examining how weather factors such as temperature, precipitation, and wind affect FHV demand.
 
 ## Navigation
-- [Data Description](data.md)
+- [Data Description](Data.md)
 - [Methodology](eda.md)
 - [Results and Visualizations](results.md)
 - [Conclusion](conclusion.md)
