@@ -1,11 +1,19 @@
 
-# US Metropolitan Weather Project
+# Exploring 2023 NYC Taxi Demand Patterns
 
 ## Overview
-This project explores relationships between climate variables using multivariate statistical methods such as PCA and MDS. The dataset includes temperature, precipitation, wind speed data for 200 major cities in the US from 2020.
+This project explores how weather conditions influence taxi or For-Hire Vehicle (FHV) ride-hiring patterns in New York City from 10/15/2023 to 11/15/2023. I aim to visually analyze clusters of pickups across different zones and time periods, examining how weather factors such as temperature, precipitation, and wind affect FHV demand.
 
+## Navigation
+- [Data Description](data.md)
+- [Methodology](eda.md)
+- [Results and Visualizations](results.md)
+- [Conclusion](conclusion.md)
+- [Code]
+- [References]
+  
 ## Data Description
-- **Source**:
+- **Source**: 
 - **Variables**: Average temperature, precipitation levels, etc.
 
 ## Methodology
