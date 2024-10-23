@@ -3,7 +3,7 @@ description: "A website showcasing my data analysis project"
 url: "https://weij567.github.io/NYC-Taxi/"
 author: Weiran Jiang
 
-theme: moderna 
+theme: minima 
 
 header_pages:
 - data.md
