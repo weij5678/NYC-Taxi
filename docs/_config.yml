@@ -5,7 +5,7 @@ url: "https://weij5678.github.io/NYC-Taxi/"
 author: Weiran 
 
 # Theme settings
-theme: minima # You can replace this with other supported GitHub Pages themes like jekyll-theme-cayman, slate, etc.
+theme: slate # You can replace this with other supported GitHub Pages themes like jekyll-theme-cayman, slate, etc.
 
 header_pages:
   - Data.md
