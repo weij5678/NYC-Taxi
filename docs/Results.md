@@ -59,7 +59,7 @@ trip_vars <- taxi[, c("trip_time", "trip_miles", "base_passenger_fare", "tolls",
 The first two principal components consistently explain a significant portion of the variance (around 46-48%)
 
 - **Visualization**:
-<img src="images/FullScreeplot.png" alt="drawing" width="600"/>
+<img src="images/CCAbarplot.png" alt="drawing" width="600"/>
 
 - **Interpretation**:
   The Screeplot above clearly shows... 
@@ -81,7 +81,7 @@ The first two principal components consistently explain a significant portion of
 The first two principal components consistently explain a significant portion of the variance (around 46-48%)
 
 - **Visualization**:
-<img src="images/FullScreeplot.png" alt="drawing" width="600"/>
+<img src="images/pickup.png" alt="drawing" width="600"/>
 
 - **Interpretation**:
   The Screeplot above clearly shows... 
@@ -94,4 +94,5 @@ The first two principal components consistently explain a significant portion of
 <img src="images/FullScreeplot.png" alt="drawing" width="600"/>
 
 - **Interpretation**:
-  The Screeplot above clearly shows... 
+  The Screeplot above clearly shows...
+---
