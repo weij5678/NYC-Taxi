@@ -24,6 +24,7 @@ The first two principal components consistently explain a significant portion of
 We found that the first two principal components consistently explain a significant portion of the variance, but now we see weather variables are most correlated with the first principal component
 
 - **Visualization**:
+<img src="images/FullBiplot.png" alt="drawing" width="600"/>
  ![FullBiplot](images/FullBiplot.png)
  ![FullBarplot](images/FullBarplot.png)
  
@@ -41,7 +42,3 @@ Since we found that the first two principal components explain,
 - **Interpretation**:
 
 
-
-
-
-![pickup](images/pickup.png)
