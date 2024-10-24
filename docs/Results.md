@@ -14,7 +14,7 @@ In this section, we present the key results from the dimension reduction analysi
 The first two principal components consistently explain a significant portion of the variance (around 46-48%)
 
 - **Visualization**:
- ![pickup](images/pickup.png)
+ ![FullScreeplot](images/FullScreeplot.png)
 
 - **Interpretation**:
   The Screeplot above clearly shows... 
@@ -24,7 +24,8 @@ The first two principal components consistently explain a significant portion of
 We found that the first two principal components consistently explain a significant portion of the variance, but now we see weather variables are most correlated with the first principal component
 
 - **Visualization**:
- ![pickup](images/pickup.png)
+ ![FullBiplot](images/FullBiplot.png)
+![FullBarplot](images/FullBarplot.png)
  
   The Screeplot above clearly shows...
 - **Interpretation**:
@@ -34,7 +35,7 @@ We found that the first two principal components consistently explain a signific
 Since we found that the first two principal components explain,
 
 - **Visualization**:
- ![pickup](images/pickup.png)
+
  
   The Screeplot above clearly shows...
 - **Interpretation**:
