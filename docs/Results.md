@@ -26,7 +26,7 @@ We found that the first two principal components consistently explain a signific
 - **Visualization**:
 <img src="images/FullBiplot.png" alt="drawing" width="600"/>
  
-<img src="images/FullBarplot.png" alt="drawing" width="600"/>
+![FullBarplot](images/FullBarplot.jpg)
 
  
   The Screeplot above clearly shows...
