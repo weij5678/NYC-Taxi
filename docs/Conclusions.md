@@ -1,3 +1,8 @@
+---
+layout: default   # This tells Jekyll to use the default layout (from the theme)
+title: "Conclusion" # Title of the page
+---
+
 ## Conclusion
 
 This project successfully analyzed New York City taxi ride patterns between October and November 2023, focusing on temporal and geographical trends, trip characteristics, and the potential influence of weather. By leveraging visual tools such as PCA, K-means clustering, and hexbin maps, we were able to uncover insights into how ride demand and characteristics vary across different times of the day and locations.
