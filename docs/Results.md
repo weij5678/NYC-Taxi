@@ -14,7 +14,7 @@ In this section, we present the key results from the dimension reduction analysi
 The first two principal components consistently explain a significant portion of the variance (around 46-48%)
 
 - **Visualization**:
- ![FullScreeplot](images/FullScreeplot.png)
+<img src="images/FullScreeplot.png" alt="drawing" width="600"/>
 
 - **Interpretation**:
   The Screeplot above clearly shows... 
@@ -26,7 +26,8 @@ We found that the first two principal components consistently explain a signific
 - **Visualization**:
 <img src="images/FullBiplot.png" alt="drawing" width="600"/>
  
- ![FullBarplot](images/FullBarplot.png)
+<img src="images/FullBarplot.png" alt="drawing" width="600"/>
+
  
   The Screeplot above clearly shows...
 - **Interpretation**:
