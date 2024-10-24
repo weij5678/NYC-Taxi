@@ -25,7 +25,7 @@ We found that the first two principal components consistently explain a signific
 
 - **Visualization**:
  ![FullBiplot](images/FullBiplot.png)
-![FullBarplot](images/FullBarplot.png)
+ ![FullBarplot](images/FullBarplot.png)
  
   The Screeplot above clearly shows...
 - **Interpretation**:
@@ -35,7 +35,7 @@ We found that the first two principal components consistently explain a signific
 Since we found that the first two principal components explain,
 
 - **Visualization**:
-
+<img src="images/FullRegression.png" alt="drawing" width="600"/>
  
   The Screeplot above clearly shows...
 - **Interpretation**:
