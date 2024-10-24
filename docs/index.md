@@ -5,9 +5,9 @@ This project explores how weather conditions influence taxi or For-Hire Vehicle 
 
 ## Navigation
 - [Data Description](Data.md)
-- [Methodology](eda.md)
-- [Results and Visualizations](results.md)
-- [Conclusion](conclusion.md)
+- [Methodology](Methodology.md)
+- [Results and Visualizations](Results.md)
+- [Conclusion](Conclusions.md)
 - [Code]
 - [References]
   
