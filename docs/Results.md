@@ -1,1 +1,1 @@
-<img src="pickup.png" alt="drawing" width="600"/>
+![pickup](images/pickup.png)
