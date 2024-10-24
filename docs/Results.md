@@ -45,6 +45,8 @@ Since we found that the first two principal components explain,
 
 ### a. Visualizing Cross-Correlation 
 The first two principal components consistently explain a significant portion of the variance (around 46-48%)
+weather_vars <- taxi[, c("temp", "dwpt", "wspd", "rhum", "prcp", "wdir", "pres")]
+trip_vars <- taxi[, c("trip_time", "trip_miles", "base_passenger_fare", "tolls", "tip_percentage")]
 
 - **Visualization**:
 <img src="images/CrossCorrelation.png" alt="drawing" width="600"/>
