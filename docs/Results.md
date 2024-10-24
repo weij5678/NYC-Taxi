@@ -11,14 +11,13 @@ In this section, we present the key results from the dimension reduction analysi
 ## 1. Principal Component Analysis (PCA)
 
 ### a. The Important Principal Components
-The first two principal components consistently explain a significant portion of the variance (around 46-48%)
+Given that the dataset contains numerous quantitative variables, a PCA was applied to reduce the dataset's dimensionality and identify key variables influencing ride behavior. Initially, separate PCA analyses were conducted for the morning, noon, and evening time periods, focusing on variables such as trip duration, trip distance, fare, and weather conditions. However, This approach helps to explore the factors driving each principal component for different times of the day, providing valuable insights into the dynamics of ride-hailing behavior.
 
 - **Visualization**:
 <img src="images/FullScreeplot.png" alt="drawing" width="600"/>
 
 - **Interpretation**:
-  The Screeplot above clearly shows... 
-
+From the screeplot, The first two principal components  explain a significant portion of the variance (around 46-48%)
 
 ### b. Analyzing the Variables within the Principal Components
 We found that the first two principal components consistently explain a significant portion of the variance, but now we see weather variables are most correlated with the first principal component
@@ -69,7 +68,7 @@ The first two principal components consistently explain a significant portion of
 The first two principal components consistently explain a significant portion of the variance (around 46-48%)
 
 - **Visualization**:
-<img src="images/FullScreeplot.png" alt="drawing" width="600"/>
+<img src="images/CanonicalStructure.png" alt="drawing" width="600"/>
 
 - **Interpretation**:
   The Screeplot above clearly shows... 
