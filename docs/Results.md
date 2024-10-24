@@ -47,7 +47,7 @@ Since we found that the first two principal components explain,
 The first two principal components consistently explain a significant portion of the variance (around 46-48%)
 
 - **Visualization**:
-<img src="images/FullScreeplot.png" alt="drawing" width="600"/>
+<img src="images/CrossCorrelation.png" alt="drawing" width="600"/>
 
 - **Interpretation**:
   The Screeplot above clearly shows... 
