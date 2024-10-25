@@ -109,7 +109,7 @@ The first two principal components consistently explain a significant portion of
 
 - **Visualization**:
 
-<img src="images/PuHexbin.png" alt="drawing" width="1000"/>
+![PuHexbin](images/PuHexbin.png)
 
 - **Interpretation**:
   The Screeplot above clearly shows... 
