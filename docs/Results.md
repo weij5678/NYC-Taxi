@@ -3,7 +3,7 @@ title: Results
 layout: default
 --- 
 
-# Results
+# Results and Visualizations
 
 In this section, we present the key results from the dimension reduction analysis and visualizations to understand the factors influencing tipping and FHV ride trends.
 
