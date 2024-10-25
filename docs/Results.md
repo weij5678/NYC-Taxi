@@ -103,25 +103,27 @@ After visualizing the bar plots, canonical correlations were calculated to asses
 
 ---
 ## 3. **Visualizing Pickup/Dropoff Locations**
+Initially, I plotted the pickup/dropoff locations based off of longitute and latitudee as points on google maps, but it was quite hard to discern the patterns. Instead, I used hexbin plots on it to observe the pickup/dropoff count on top  of NYC's map to osberve any patterns.
 
 ### a. **Pickup Location Observations**
-The first two principal components consistently explain a significant portion of the variance (around 46-48%)
 
 - **Visualization**:
 
-![PuHexbin](images/PuHexbin.png)
+<img src="images/PuHexbin" alt="drawing" width="1500"/>
 
 - **Interpretation**:
-  The Screeplot above clearly shows... 
+  The hexbin pickup maps for morning, noon, and evening clearly show how ride-hailing demand shifts throughout the day. It is unsurprising that the most popular pickup location is around Midtown Manhattan. However, an interesting pattern emerges as the day progresses, with Midtown becoming a less dominant pickup spot. This suggests that while the morning sees a high concentration of pickups in central Manhattan, potentially related to nightlife or early commuters, the assumption that people would be coming from various parts of the city in the morning doesn't hold as strongly. Though less noticeable, residential areas such as Brooklyn show a higher concentration of pickups in the morning compared to other times of the day, indicating shifting demand patterns.
 
+  
 
 ### b. **Dropoff Location Observations**
-The first two principal components consistently explain a significant portion of the variance (around 46-48%)
 
 - **Visualization**:
 
 ![DoHexbin](images/DoHexbin.png)
 
 - **Interpretation**:
-  The Screeplot above clearly shows...
+ In the morning, drop-offs are predominantly concentrated in lower Manhattan, particularly in the Financial District, which aligns with the morning commute as workers head to offices and other commercial hubs. However, the yellow hexbin in the morning points to the Upper East Side, which is primarily a residential area. This is an intriguing observation, as it suggests that the Upper East Side experiences higher drop-off activity than expected during the morning hours.
+Much like the pickup map, it appears that the highly concentrated drop-off locations in lower Manhattan and the Upper East side begin to fade or become less significant as the day progresses. This could indicate that taxis as a commuting option are less popular later in the day, possibly giving way to other modes of transport or indicating less concentrated work-related travel after the morning rush.
+
 ---
