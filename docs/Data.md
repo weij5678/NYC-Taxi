@@ -2,9 +2,9 @@
 ## Link Data File here:
 
 ## Background Information
-This project utilizes from high-volume for-hire vehicle (FHV) or taxi trip data in New York City from **October 15, 2023, to November 15, 2023**, focusing on trips that occurred at three specific times: **8:00 AM(Morning, 12:00 PM (Midday), and 6:00 PM(evening)**. These time windows were selected to capture key parts of the day (morning, midday, evening) while reducing the overall dataset size. Since the full dataset includes millions of trips, limiting the data to these specific times helps ensure a manageable dataset for analysis. In addition, the dataset provides detailed information on pickup locations, timestamps, and various meteorological conditions during each trip. The goal is to explore potential relationships between weather patterns and ride-hailing demand across NYC, identifying spatial and temporal clusters that may help optimize taxi operations.
+This project utilizes from high-volume for-hire vehicle (FHV) or taxi trip data in New York City from **October 15, 2023, to November 15, 2023**, focusing on trips that occurred at three specific times: **8:00-8:03 AM (Morning), 12:00-12:03 PM (Midday), and 6:00-6:03 PM (evening)**. These time windows were selected to capture key parts of the day (morning, midday, evening) while reducing the overall dataset size. Since the full dataset includes millions of trips, limiting the data to these specific times helps ensure a manageable dataset for analysis. In addition, the dataset provides detailed information on pickup locations, timestamps, and various meteorological conditions during each trip. The goal is to explore potential relationships between weather patterns and ride-hailing demand across NYC, identifying spatial and temporal clusters that may help optimize taxi operations.
 
-The dataset contains **6,939 observations**, each representing a one-minute interval of ride-hiring activity at these selected times. Each trip is linked to weather data based on the pickup location's latitude and longitude, retrieved through the Meteostat API. Each case is linked to meteorological data based on the trip's pickup location, which was geocoded using Google Maps API. Weather conditions, including temperature, wind speed, and precipitation, were sourced from the Meteostat API. 
+The dataset contains **6,939 observations**, each representing a three minute interval of ride-hiring activity starting from the pickup times. Each trip is linked to weather data based on the pickup location's latitude and longitude, retrieved through the Meteostat database. Each case is linked to meteorological data based on the trip's pickup location, which was geocoded using Google Maps API. Weather conditions, including temperature, wind speed, and precipitation, were sourced from the Meteostat API. 
 
 ## Key Steps for Data Cleaning and Pre-Processing
 
@@ -49,16 +49,19 @@ The dataset contains **6,939 observations**, each representing a one-minute inte
 | `shared_match_flag`     | Indicates if a shared ride match was found              | Categorical: `Yes`, `No`                         | NYC FHV Data                   |
 | `wav_request_flag`      | Indicates if a wheelchair-accessible ride was requested | Categorical: `Yes`, `No`                         | NYC FHV Data                   |
 | `wav_match_flag`        | Indicates if a wheelchair-accessible ride was matched   | Boolean: `True`, `False`                         | NYC FHV Data                   |
-| `temp`                  | Temperature at pickup location (°C)                     | Decimal, range: `-10` to `35`                    | Meteostat API                  |
-| `dwpt`                  | Dew point temperature at pickup location (°C)           | Decimal, range: `-10` to `35`                    | Meteostat API                  |
-| `rhum`                  | Relative humidity at pickup location (%)                | Decimal, range: `0` to `100`                     | Meteostat API                  |
-| `prcp`                  | Precipitation at pickup location (mm)                   | Decimal, range: `0` to `50`                      | Meteostat API                  |
-| `wdir`                  | Wind direction at pickup location (degrees)             | Integer, range: `0` to `360`                     | Meteostat API                  |
-| `wspd`                  | Wind speed at pickup location (km/h)                    | Decimal, range: `0` to `100`                     | Meteostat API                  |
-| `pres`                  | Atmospheric pressure at pickup location (hPa)           | Decimal, range: `900` to `1050`                  | Meteostat API                  |
-| `WeatherCondition`      | Textual description of weather condition                | Text: Clear, Cloudy, Light Rain, etc.            | Meteostat API                  |
+| `temp`                  | Temperature at pickup location (°C)                     | Decimal, range: `-10` to `35`                    | Meteostat Data                 |
+| `dwpt`                  | Dew point temperature at pickup location (°C)           | Decimal, range: `-10` to `35`                    | Meteostat Data                 |
+| `rhum`                  | Relative humidity at pickup location (%)                | Decimal, range: `0` to `100`                     | Meteostat Data                 |
+| `prcp`                  | Precipitation at pickup location (mm)                   | Decimal, range: `0` to `50`                      | Meteostat Data                 |
+| `wdir`                  | Wind direction at pickup location (degrees)             | Integer, range: `0` to `360`                     | Meteostat Data                 |
+| `wspd`                  | Wind speed at pickup location (km/h)                    | Decimal, range: `0` to `100`                     | Meteostat Data                 |
+| `pres`                  | Atmospheric pressure at pickup location (hPa)           | Decimal, range: `900` to `1050`                  | Meteostat Data                 |
+| `WeatherCondition`      | Textual description of weather condition                | Text: Clear, Cloudy, Light Rain, etc.            | Meteostat Data                 |
 | `PeriodOfDay`           | Time of day the trip occurred                           | Text: Morning, Midday, Evening                   | Derived from `pickup_datetime` |
-
+| `puloc_lat`             | Latitude of Pickup Location Id                          | Decimal, range: '40.5' to '41.2'                 | Google Maps API                |
+| `puloc_lng`             | Longitude of Pickup Location Id                         | Decimal, range: '-74.2' to '-73.6'               | Google Maps API                |
+| `doloc_lat`             | Latitude of Dropoff Location Id                         | Decimal, range: '40.5' to '41.2'                 | Google Maps API                |
+| `doloc_lat`             | Longitude of Dropoff Location Id                        | Decimal, range: '-74.2' to '-73.6'               | Google Maps API                |
 ## Data Sources
 
 1. **NYC FHV Trip Data (October 2023 - November 2023)**  
@@ -70,6 +73,6 @@ The dataset contains **6,939 observations**, each representing a one-minute inte
    Provides geographic zone mappings for location IDs in the trip data.
 
 3. **Meteostat Weather Data**  
-   [Meteostat API](https://dev.meteostat.net/)  
+   [Meteostat Dataset](https://dev.meteostat.net/)  
    Meteorological data (temperature, wind speed, precipitation, etc.) was retrieved for each trip’s pickup location and time.
 
