@@ -120,7 +120,7 @@ Initially, I plotted the pickup/dropoff locations based off of longitute and lat
 
 - **Visualization**:
 
-<img src="images/DoHexbin.png" alt="drawing" width="2500" height="2000"/>
+<img src="images/DoHexbin.png" alt="drawing" width="2500" height="1000"/>
 
 - **Interpretation**:
  In the morning, drop-offs are predominantly concentrated in lower Manhattan, particularly in the Financial District, which aligns with the morning commute as workers head to offices and other commercial hubs. However, the yellow hexbin in the morning points to the Upper East Side, which is primarily a residential area. This is an intriguing observation, as it suggests that the Upper East Side experiences higher drop-off activity than expected during the morning hours.
