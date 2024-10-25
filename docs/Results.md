@@ -109,7 +109,7 @@ The first two principal components consistently explain a significant portion of
 
 - **Visualization**:
 
-<img src="images/PuHexbin.png" alt="drawing" width="600"/>
+<img src="images/PuHexbin.png" alt="drawing" width="1000"/>
 
 - **Interpretation**:
   The Screeplot above clearly shows... 
@@ -120,7 +120,7 @@ The first two principal components consistently explain a significant portion of
 
 - **Visualization**:
 
-<img src="images/DoHexbin.png" alt="drawing" width="600"/>
+<img src="images/DoHexbin.png" alt="drawing" width="1000"/>
 
 - **Interpretation**:
   The Screeplot above clearly shows...
