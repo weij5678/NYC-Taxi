@@ -37,7 +37,7 @@ CCA was applied to explore the relationships between ride characteristics and we
   
 
 ## 3. **Maps for Pickup and Drop-off Locations**
-Hexbin maps were utilized to visualize the spatial distribution of pickup and drop-off locations across New York City at different times of the day (morning, noon, evening). Initially, points were pointed on the NYC map distinguished by color for different times. However, used Hexbin plots instead because it effectively manage dense spatial data, aggregating ride data into hexagonal bins, making it easier to identify geographic hotspots and observe patterns in ride demand.The hexbin maps were chosen for their ability to declutter dense spatial data and reveal geographic patterns. The choice of this method is appropriate as it allows for clear visualization of high-traffic areas and time-specific ride behaviors across New York City.
+Hexbin maps were used to visualize the spatial distribution of pickup and drop-off locations across New York City at different times of the day (morning, noon, evening). Initially, points were plotted on the NYC map and distinguished by color for different times. However, hexbin plots were preferred because they effectively manage dense spatial data by aggregating ride data into hexagonal bins. This approach makes it easier to identify geographic hotspots and observe patterns in ride demand. Hexbin maps were chosen specifically for their ability to declutter dense spatial data and reveal meaningful geographic patterns. 
 
 - **Hexbin Map of Pickup anf Drop off Locations**: 
   - Created separate hexbin maps for morning, noon, and evening to observe the temporal and spatial variations in ride activity.
