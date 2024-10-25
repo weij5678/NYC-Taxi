@@ -47,7 +47,14 @@ After selecting the first two principal components, the next step is to identify
 ### c. **Principal Component Regression**
 The Principal Component Regression (PCR) model was used to examine the relationship between tipping behavior and the first two principal components.
 
-- **Visualization**:
+- **(Intercept)**: The intercept of 7.00 suggests that, on average, the baseline tip percentage is around 7% when both PC1 and PC2 are zero.
+
+- **PC1**: With an estimate of -0.48 and a highly significant p-value (p < 2e-16), this coefficient suggests a slight negative association between PC1 which holds most of the ride characterstics and tip_percentage, meaning that as PC1 increases, the tip percentage tends to decrease slightly. 
+
+- **PC2**: This coefficient is also negative but not significant (p = 0.087), indicating a weaker relationship.
+
+
+- **Diagnostics**:
 
   
 <img src="images/FullRegression.png" alt="drawing" width="600"/>
