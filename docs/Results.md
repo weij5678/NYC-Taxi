@@ -44,7 +44,7 @@ After selecting the first two principal components, the next step is to identify
 
   In PC2, the loadings plot indicates that wind speed, wind direciton, tolls charged during, and congestion surcharge have the strongest positive contributions. In the biplot, windspeed and tolls charged are far from the origin in the direction of PC2, confirming their role as key drivers of variability in this component. This suggests that PC2 captures variability related to external factors like weather and tolls/congestion perhaps indicating different patterns of demand depending on weather conditions and traffic conditions.
 
-### c. Principal Component Regression
+### c. **Principal Component Regression**
 The Principal Component Regression (PCR) model was used to examine the relationship between tipping behavior and the first two principal components.
 
 - **Visualization**:
@@ -88,7 +88,7 @@ Although the cross-correlation between the two sets of variables (weather condit
 
   The second pair of canonical variates(right) shows that u2 is influenced primarily by wind speed and air pressure, while v2 is driven by tolls, base fare, and tip percentage. This suggests that certain weather conditions, like higher wind speeds and air pressure, might be related to higher tolls or tipping percentages, though the strength of this relationship is quite weak.
 
-### c.Overall correlation Structure
+### c. **Overall correlation Structure**
 After visualizing the bar plots, canonical correlations were calculated to assess the association between the covariates. A test for the significance of these correlations revealed that the first two canonical variate pairs were significant and prompted further exploration, as shown above. 
 
 - **Visualization**:
@@ -102,9 +102,9 @@ After visualizing the bar plots, canonical correlations were calculated to asses
   However, the relatively weak correlation indicates that while trip characteristics do influence weather conditions to some extent, the relationship is not particularly strong. In other words, only a small portion of the variability in weather can be attributed to the characteristics of the trips. 
 
 ---
-## 3. Visualizing Pickup/Dropoff Locations
+## 3. **Visualizing Pickup/Dropoff Locations**
 
-### a. Pickup Location Trends
+### a. **Pickup Location Observations**
 The first two principal components consistently explain a significant portion of the variance (around 46-48%)
 
 - **Visualization**:
@@ -115,7 +115,7 @@ The first two principal components consistently explain a significant portion of
   The Screeplot above clearly shows... 
 
 
-### b. Dropoff Location Trends
+### b. **Dropoff Location Observations**
 The first two principal components consistently explain a significant portion of the variance (around 46-48%)
 
 - **Visualization**:
