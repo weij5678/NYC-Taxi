@@ -5,40 +5,44 @@ layout: default
 
 # Methodology
 
-## 1. Principal Componenet Analysis (PCA) 
+## 1. **Principal Componenet Analysis (PCA) **
 
-Given that the dataset contains numerous quantitative variables, a PCA was applied to reduce the dataset's dimensionality and identify key variables influencing ride behavior. Initially, separate PCA analyses were conducted for the morning, noon, and evening time periods, focusing on variables such as trip duration, trip distance, fare, and weather conditions, excluding tip percentage variable. It was thought that this approach would help explore the factors driving each principal component for different times of the day, providing valuable insights into the dynamics of ride-hailing behavior. However, after observing the visualizations, it is found that there is not much of a difference between the PCA anlyses in regards to time. Instead, a PCA was performed on the dataset disregarding time, but still exlcuding the tip percentage variable to observe the dynamics.
+To handle the dataset's numerous quantitative variables, PCA was applied to reduce dimensionality and identify key variables influencing ride behavior. Initially, separate PCA analyses were performed for the morning, noon, and evening time periods, focusing on variables such as trip duration, trip distance, fare, and weather conditions, excluding the tip percentage variable. This approach aimed to explore how factors driving ride-hailing behavior vary by time of day. However, upon reviewing the visualizations, it was found that there were no significant differences between the time-specific PCA analyses. As a result, a combined PCA was performed, excluding time as a factor, but still excluding the tip percentage variable in order to perform a regression on tip percentages.
 
 - **PCA Visualizations**: 
-  - **Screeplot**: Utilized to determine how many principal components to preserve
-  - **Biplot**: Shows the variables that are important to the principal components
-  - **Barplot**: Shows what variables principal components are made up of
+  - **Screeplot**: Used to determine the number of principal components to retain.
+  - **Biplot**: Displays the variables that are important to the principal components.
+  - **Barplot**: Shows the contribution of each variable to the principal components.
   
 - **Principal Component Regression**:
-  - Performed a Principal Component Regression on the first two principal components
-  - Plotted the diagnostic graphs for the regression
+  - Performed a Principal Component Regression (PCR) using the first two principal components.
+  - Diagnostic plots were generated to assess the quality of the regression.
+
  
- ## 2. Canonical Correlation Analysis (CCA)
-To explore the cross-correlation between ride characteristics and weather variables, CCA was applied to examine those relationships. Specifically, we explored seven weather conditions (temperature, dew point, wind speed, humidity, precipitation, wind direction, air pressure) and five trip characteristics (trip duration, trip distance, base passenger fare, tolls, tip percentage). We aimed to identify any significant influence of weather on trip characteristics.
+## 2. **Canonical Correlation Analysis (CCA)**
+CCA was applied to explore the relationships between ride characteristics and weather conditions. Seven weather variables (temperature, dew point, wind speed, humidity, precipitation, wind direction, air pressure) and five trip characteristics (trip duration, trip distance, base passenger fare, tolls, tip percentage) were examined to determine if weather conditions significantly influence trip characteristics.
 
 - **Correlation Matrix**: 
-  - Plotted a canonical correlation matrix to explore the relationships between weather variables and trip characteristics themselves
-  - Also examined the cross-correlation between weather conditions and trip characteristics
+  - Visualized the canonical correlation matrix to examine relationships between weather variables and trip characteristics.
+  - Analyzed the cross-correlation between weather conditions and trip characteristics.
     
-- **Visualizing Canonical Covariates**: 
-  - Examined what variables made up most of u1 and v1 which are linear combinations of the wind conditions and trip characteristics, repsectively.
-  - Also see how u1 and v1 correlate with each other
+- **Visualizing Canonical Covariates**:
+  - Performed correlation test to see how many canonical covariate pairs were necassary to visualize
+  - Identified which variables contributed the most to the first two canonical pairs
+    
 
 - **Canonical Correlation Structure**:
-  - Wisualized the entire sturcture to find how much u1 and V1 correlate with each other
+  - Calculated the canonical correlations in order to visualize
+  - Visualized the overall structure of the canonical correlation to understand how much summary of weather variables and trip characterstics are related.
+  
 
-## 3. Maps for Pickup and Drop-off Locations
-Hexbin maps were used to visualize the spatial distribution of pickup and drop-off locations across New York City for different times of the day (morning, noon, evening). Hexbin maps provide a clear, uncluttered visualization of dense spatial data. They allow for the identification of geographical hotspots by aggregating ride data into hexagonal bins, making it easier to see where ride demand is concentrated.
+## 3. **Maps for Pickup and Drop-off Locations**
+Hexbin maps were utilized to visualize the spatial distribution of pickup and drop-off locations across New York City at different times of the day (morning, noon, evening). Initially, points were pointed on the NYC map distinguished by color for different times. However, used Hexbin plots instead because it effectively manage dense spatial data, aggregating ride data into hexagonal bins, making it easier to identify geographic hotspots and observe patterns in ride demand.The hexbin maps were chosen for their ability to declutter dense spatial data and reveal geographic patterns. The choice of this method is appropriate as it allows for clear visualization of high-traffic areas and time-specific ride behaviors across New York City.
 
-- **Map of Pickup anf Drop off Locations**: 
-  - Created three separate screeplots for the morning, noon, and evening
-  - Interpret the amount of principal components to keep in the dataset
+- **Hexbin Map of Pickup anf Drop off Locations**: 
+  - Created separate hexbin maps for morning, noon, and evening to observe the temporal and spatial variations in ride activity.
+  - Interpreted the patterns to identify where ride demand is concentrated throughout the day.
+ 
+  
     
-- **Hexbin Map for Pickup and Drop-off Locations**: 
-  - Created three separate screeplots for the morning, noon, and evening
-  - Interpret the amount of principal components to keep in the dataset 
+
