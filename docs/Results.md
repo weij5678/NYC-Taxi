@@ -120,7 +120,7 @@ The first two principal components consistently explain a significant portion of
 
 - **Visualization**:
 
-<img src="images/DoHexbin.png" alt="drawing" width="1000"/>
+![DoHexbin](images/DoHexbin.png)
 
 - **Interpretation**:
   The Screeplot above clearly shows...
