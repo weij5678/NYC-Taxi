@@ -1,8 +1,8 @@
 # Site settings
-title: "Exploring 2023 NYC FHV Demand Patterns"
+title: "Multivariate Statistics Project"
 description: "A website showcasing my dimension reduction project"
 url: "https://weij5678.github.io/NYC-Taxi/"  
-author: Weiran 
+author: Weiran Jiang
 
 # Theme settings
 theme: minima # You can replace this with other supported GitHub Pages themes like jekyll-theme-cayman, slate, etc.
