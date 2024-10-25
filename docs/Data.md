@@ -34,6 +34,7 @@ The dataset contains **6,939 observations**, each representing a three minute in
 
 ## Variable Descriptions
 
+
 | Variable Name          | Variable Label                                           | Valid Range/Code                                | Source                          |
 |------------------------|----------------------------------------------------------|-------------------------------------------------|---------------------------------|
 | `hvfhs_license_num`     | License number of the FHV service                       | Text                                             | NYC FHV Data                   |
