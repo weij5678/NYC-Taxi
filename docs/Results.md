@@ -88,7 +88,7 @@ Although the cross-correlation between the two sets of variables (weather condit
 
   The second pair of canonical variates(right) shows that u2 is influenced primarily by wind speed and air pressure, while v2 is driven by tolls, base fare, and tip percentage. This suggests that certain weather conditions, like higher wind speeds and air pressure, might be related to higher tolls or tipping percentages, though the strength of this relationship is quite weak.
 
-### c. **Overall correlation Structure**
+### c. **Overall CCA Structures**
 After visualizing the bar plots, canonical correlations were calculated to assess the association between the covariates. A test for the significance of these correlations revealed that the first two canonical variate pairs were significant and prompted further exploration, as shown above. 
 
 - **Visualization**:
