@@ -79,22 +79,27 @@ The cross-correlation between weather and trip variables is weak, as shown by th
 Although the cross-correlation between the two sets of variables (weather conditions and trip characteristics) was weak, canonical covariates were still calculated to further explore the relationships. The CCA bar plots were examined to visualize how the first two pairs of canonical variates relate to each other.
 
 - **Visualization**:
+
 <img src="images/CCAbarplot.png" alt="drawing" width="600"/>
 
 - **Interpretation**:
   
   Since u1 is heavily influenced by dew point and relative humidity, and v1 is driven by trip duration and base fare, this suggests that higher humidity and dew point might be associated with longer trip durations and higher base fares. 
 
-The second pair of canonical variates(right) shows that u2 is influenced primarily by wind speed and air pressure, while v2 is driven by tolls, base fare, and tip percentage. This suggests that certain weather conditions, like higher wind speeds and air pressure, might be related to higher tolls or tipping percentages, though the strength of this relationship is quite weak.
+  The second pair of canonical variates(right) shows that u2 is influenced primarily by wind speed and air pressure, while v2 is driven by tolls, base fare, and tip percentage. This suggests that certain weather conditions, like higher wind speeds and air pressure, might be related to higher tolls or tipping percentages, though the strength of this relationship is quite weak.
 
 ### c.Overall correlation Structure
-After visualizing the barplots, we calculated the canonical correlations to see how much the covariates are associated. We performed a test for the signifcance of the correlations and found the first two canonical pairs were signficant and should be explored as we had done above. 
+After visualizing the bar plots, canonical correlations were calculated to assess the association between the covariates. A test for the significance of these correlations revealed that the first two canonical variate pairs were significant and prompted further exploration, as shown above. 
 
 - **Visualization**:
+
 <img src="images/CanonicalStructure.png" alt="drawing" width="600"/>
 
 - **Interpretation**:
+  
+  The first canonical variate pair (u1 and v1) in the visualization shows a canonical correlation of 0.21, which means that 21% of the variance in the summary weather conditions can be explained by the summary of trip characteristics. This suggests a weak relationship between the two sets of variables, where factors like trip duration, trip miles, and base fare provide some explanatory power for weather conditions like temperature and humidity.
 
+  However, the relatively weak correlation indicates that while trip characteristics do influence weather conditions to some extent, the relationship is not particularly strong. In other words, only a small portion of the variability in weather can be attributed to the characteristics of the trips. 
 
 ---
 ## 3. Visualizing Pickup/Dropoff Locations
@@ -103,6 +108,7 @@ After visualizing the barplots, we calculated the canonical correlations to see 
 The first two principal components consistently explain a significant portion of the variance (around 46-48%)
 
 - **Visualization**:
+
 <img src="images/pickup.png" alt="drawing" width="600"/>
 
 - **Interpretation**:
@@ -113,6 +119,7 @@ The first two principal components consistently explain a significant portion of
 The first two principal components consistently explain a significant portion of the variance (around 46-48%)
 
 - **Visualization**:
+
 <img src="images/FullScreeplot.png" alt="drawing" width="600"/>
 
 - **Interpretation**:
