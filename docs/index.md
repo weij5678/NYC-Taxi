@@ -14,9 +14,9 @@ Ride-hailing services, including For-Hire Vehicles (FHVs) like taxis, have becom
 
 
 ### Key Research Questions:
-- **How do weather conditions (e.g., temperature, precipitation, wind) affect the demand for FHV services in New York City?**
-- **Are there specific zones or regions in the city where the impact of weather on demand is more pronounced?**
-- **How does ride-hailing demand change across different times of the day under varying weather conditions?**
+- How do weather conditions (e.g., temperature, precipitation, wind) affect the demand for FHV services in New York City?
+- Are there specific zones or regions in the city where the impact of weather on demand is more pronounced?
+- How does ride-hailing demand change across different times of the day under varying weather conditions?
 
 
 ## Navigation
