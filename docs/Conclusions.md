@@ -3,52 +3,59 @@ layout: default   # This tells Jekyll to use the default layout (from the theme)
 title: "Conclusion" # Title of the page
 ---
 
-## Conclusion
+# Conclusion
 
-This project successfully analyzed New York City taxi ride patterns between October and November 2023, focusing on temporal and geographical trends, trip characteristics, and the potential influence of weather. By leveraging visual tools such as PCA, K-means clustering, and hexbin maps, we were able to uncover insights into how ride demand and characteristics vary across different times of the day and locations.
+## Key Findings:
 
-### Key Findings:
+The analysis of FHV ride pattern data through dimensionality reduction techniques and spatial visualizations reveals insights into tipping behavior, ride characteristics, and demand patterns across New York City. Here are the key conclusions:
 
-- **Geographic and Temporal Patterns**:  
-  The hexbin maps and time-specific visualizations clearly showed that taxi demand follows predictable geographic patterns depending on the time of day. Morning pickups are predominantly concentrated in central Manhattan and business districts, reflecting commuting activity. Noon trips spread slightly farther out, while evening rides shift towards residential areas in outer boroughs like Brooklyn and Queens. Drop-offs follow a similar temporal pattern but are more evenly spread across the city in the evening, reflecting the return of commuters to more suburban areas. This observation aligns with the assumption that commuting behavior drives morning and evening peak periods.
+### 1. **Principal Component Analysis (PCA)**
 
-- **Trip Characteristics and Their Role in PCA**:  
-  The PCA analysis revealed that the first two principal components captured significant variance in the dataset. The first principal component (PC1) explained between 35-37% of the variance across all time periods and was heavily influenced by trip-related variables such as `trip_miles`, `trip_time`, and `base_passenger_fare`. These variables strongly describe the fundamental ride characteristics—longer rides are associated with higher fares, indicating that trip distance and fare structure drive the majority of the variance in ride data. The second component (PC2), which explained around 10-12% of the variance, was more influenced by weather variables such as `wspd`, `rhum`, and `wdir`. This suggests that while trip distance and fare are the dominant drivers, weather factors do influence ride behavior, particularly during specific conditions (e.g., high wind speeds or humidity).
+The PCA revealed that the first two principal components capture a significant portion of the variability in ride-hailing data. The key factors driving the first principal component are trip-related variables such as **trip distances**, **duration**, and **base fare**, while the second principal component is driven by external factors like **wind speed**, **congestion surcharge**, and **tolls charged**. These findings suggest that longer trips with higher fares are major contributors to ride-hailing behavior, while weather and traffic conditions also influence ride demand, although to a lesser degree.
 
-- **Clustering Insights**:  
-  The K-means clustering on the PCA biplots identified three distinct clusters, largely differentiated by trip characteristics and, to a lesser degree, by weather conditions. One group of clusters is characterized by shorter, low-cost trips, likely representing short, intra-city commutes. Another group involves longer trips with higher fares, which could correspond to airport rides or trips to outer boroughs and suburban areas. The weather variables played a notable role in one of the clusters, indicating that adverse weather conditions could influence certain types of trips, particularly longer ones. However, the clustering largely demonstrated that trip characteristics are the primary driver of differentiation, with weather having a secondary effect.
+### 2. **Tipping Behavior**
 
-- **Canonical Correlation Analysis (CCA) Findings**:  
-  Despite examining the relationship between weather variables and trip characteristics, the CCA results showed weak cross-correlations. This implies that weather conditions—while potentially impactful in extreme scenarios—do not have a strong linear relationship with everyday ride variables like trip time or distance. However, it’s possible that more complex or non-linear relationships exist, which were not captured by this analysis.
+The Principal Component Regression model, which regressed tipping behavior on the first two principal components, uncovered a weak yet complex association between tipping and ride characteristics. While trip duration and distance influence tips, the diagnostic plots indicated issues with non-linearity and heteroscedasticity. Future studies could improve the regression model by exploring transformations or non-linear models to better capture the relationship between tipping and these underlying factors.
 
-### Limitations:
+### 3. **Canonical Correlation Analysis (CCA)**
 
-- **Granularity of Weather Data**:  
-  While we included weather data, the dataset used was limited in granularity and scope. Extreme weather conditions such as heavy snowfall or severe storms were not present in the time period examined. Future analyses with more detailed weather data, including more granular temporal resolution or additional variables like visibility and specific precipitation types, could provide a deeper understanding of how weather affects taxi demand and ride characteristics.
+The CCA uncovered a weak relationship between weather conditions and trip characteristics. Despite the weak correlations, some interesting associations were found: **dew point** and **humidity** were modestly related to longer trip durations and higher base fares. However, overall, the analysis shows that weather factors like **temperature**, **wind speed**, and **air pressure** have limited influence on trip characteristics and tipping behavior. This suggests that other factors, such as time of day or location, may play a more significant role in ride demand.
 
-- **Missing Taxi Zone Data**:  
-  The analysis would have greatly benefited from the inclusion of NYC taxi zone boundaries. The use of location IDs without spatial context limited the ability to perform in-depth spatial analysis. Adding actual geographical zones for both pickups and drop-offs would provide richer insights into how ride demand varies across different neighborhoods and how these patterns shift with time.
+### 4. **Spatial Distribution of Ride Demand**
 
-- **Influence of Tips**:  
-  While tipping data was excluded from the PCA analysis, incorporating tips in a more focused analysis could yield valuable insights, especially in understanding rider behavior and the economic interaction between fare and tipping. For example, exploring how tipping varies across different trip distances, fare amounts, or even weather conditions could provide a more comprehensive view of rider behavior and driver compensation.
+Hexbin maps revealed shifting patterns of ride-hailing demand across New York City throughout the day. Midtown Manhattan emerged as the primary hotspot for pickups in the morning, but as the day progressed, this demand faded, indicating a decline in ride activity in the area. Meanwhile, residential areas like **Brooklyn** showed a higher concentration of pickups in the morning, reflecting commuting patterns. Interestingly, the **Upper East Side**, traditionally a residential area, showed an unexpected concentration of drop-offs in the morning, suggesting more complex ride behavior patterns, perhaps related to daily commuting or other factors.
 
-### Future Directions:
+--- 
 
-- **Incorporating Taxi Zone Data**:  
-  Future work should integrate the geographic boundaries of the NYC taxi zones to allow for more detailed spatial analysis. This would help provide clearer insights into the flow of rides across neighborhoods and boroughs, as well as how demand fluctuates within and across different zones.
+## Limitations
 
-- **Exploring Non-linear Relationships**:  
-  Given the weak correlations found in the CCA between weather and trip variables, further exploration using non-linear models or machine learning techniques could uncover more complex relationships. Techniques such as Random Forest or Neural Networks might reveal patterns in how weather impacts ride demand during more extreme conditions or over longer periods.
+While the analysis provided valuable insights, there are several limitations to consider:
 
-- **Impact of Extreme Weather**:  
-  Future analyses could focus on datasets that capture more extreme weather conditions, such as winter storms or heat waves. These events might have a more pronounced effect on ride behavior, which could reveal stronger correlations between weather and trip characteristics.
+1. **Lack of Taxi Zone Data**: The analysis would have benefitted from incorporating **taxi zone data**, which would have allowed for a more granular understanding of ride patterns across specific zones in New York City. This could have improved the spatial accuracy of the pickup and drop-off patterns.
+  
+2. **Granularity of Weather Data**: The weather data used in this study may lack the level of granularity required to capture the nuanced impact of weather on ride behavior. More localized or time-specific weather data could have provided deeper insights into how conditions such as wind and precipitation influence demand.
 
-- **Rider Behavior and Economic Variables**:  
+3. **Complexity of Variables**: The large number of variables in the dataset made it difficult to discern a clear, continuous trend. While PCA helped reduce dimensionality, there remains a degree of complexity that could be addressed by focusing on a smaller set of key variables or by applying advanced methods such as feature selection.
+
+---
+
+## Recommendations for Future Research
+
+The analysis has provided valuable insights into ride-hailing behavior in New York City, but there are several areas that warrant further exploration:
+
+1. **Improving Regression Models**: Future work could explore non-linear models or transformations to better capture the complex relationship between tipping and trip characteristics.
+  
+2. **Weather Data Integration**: While this study found weak correlations between weather and ride behavior, future studies could include more granular weather data or explore its interaction with other factors, such as time of day or specific locations.
+
+3. **Further Exploration of Spatial Patterns**: Additional spatial analyses could focus on more specifc neighborhoods to uncover nuanced patterns in ride demand across different parts of New York City, including areas beyond Manhattan.
+
+4.  **Rider Behavior and Economic Variables**:  
   Incorporating economic variables such as tips, driver pay, and fare surcharges could provide additional insights into rider behavior. Understanding how tipping interacts with fare and weather could inform driver compensation models and help improve driver satisfaction by identifying patterns where higher tips are more likely.
 
-- **Temporal Expansion**:  
-  Expanding the temporal scope of the analysis to include more months or years could provide a broader understanding of ride patterns. Examining seasonal trends and longer-term shifts in ride demand (e.g., pre-pandemic vs. post-pandemic patterns) could yield deeper insights into how taxi services adapt to changing environments and rider behavior.
+---
 
-### Conclusion
+## Final Thoughts
 
-In conclusion, this project has successfully highlighted important ride patterns in New York City and provided a foundation for further exploration. While trip characteristics are the dominant drivers of variance in ride data, weather conditions and geographic factors also play meaningful roles, particularly during certain times of the day. Future work will aim to build on these findings, integrating more detailed weather data, geographic boundaries, and non-linear modeling techniques to further uncover the complexities of New York City's ride-hailing ecosystem.
+This analysis offers a detailed exploration of ride pattern demand and tipping behavior in New York City. By employing dimensionality reduction techniques and spatial visualization, the study has highlighted the main factors driving ride demand and uncovered intriguing patterns related to both geography and timing. 
+
+**Thank you for exploring this analysis! Feel free to check out the [GitHub repository](https://github.com/weij5678/NYC-Taxi/tree/main) for code, data, and further details.**
