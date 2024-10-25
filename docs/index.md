@@ -24,7 +24,7 @@ Ride-hailing services, including For-Hire Vehicles (FHVs) like taxis, have becom
 - [Methodology](Methodology.md)
 - [Results and Visualizations](Results.md)
 - [Conclusion](Conclusions.md)
-- [Code and References] (https://weij5678.github.io/NYC-Taxi/)
+- [Code and References] (https://github.com/weij5678/NYC-Taxi/tree/main)
   
 ## Key Findings
 
