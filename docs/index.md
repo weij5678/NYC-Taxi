@@ -46,7 +46,7 @@ Potential extensions of this analysis include:
 - Improving the Regression Models
 - Better Weather Data Integration
 - Further Exploration of Spatial Patterns
-- Rider Behavior and Economic Variables:
+- Rider Behavior and Economic Variables
 
 
 
