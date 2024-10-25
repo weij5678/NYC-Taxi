@@ -71,6 +71,8 @@ The dataset contains **6,939 observations**, each representing a three minute in
 | `doloc_lat`             | Latitude of Dropoff Location Id                         | Decimal, range: '40.5' to '41.2'                 | Google Maps API                |
 | `doloc_lat`             | Longitude of Dropoff Location Id                        | Decimal, range: '-74.2' to '-73.6'               | Google Maps API                |
 | `tip_percentage`        | Percentage of Tip Recieved based on base fare/tip       | Decimal, range: '0' to '100'                     | Derived from 'tips'            |
+
+
 ## Data Sources
 
 1. **NYC FHV Trip Data (October 2023 - November 2023)**  
