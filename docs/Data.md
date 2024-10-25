@@ -8,20 +8,24 @@ The dataset contains **6,939 observations**, each representing a three minute in
 
 ## Key Steps for Data Cleaning and Pre-Processing
 
-1. **Geolocation Lookup**:  
+1. **Filtering Data to Specific Time Points**:  
+   Given the large size of the original dataset, which includes trips recorded every minute throughout the day, the analysis focuses on three specific time points—**8:00 AM, 12:00 PM, and 6:00 PM**—for a selected month, from mid-October to mid-November. This period was chosen due to its high variability in weather conditions, providing an opportunity to explore how weather impacts ride-hailing behavior while minimizing the number of observations. These times were selected to represent key periods of the day when ride-hailing activity is likely to fluctuate based on traffic patterns and other factors.
+
+2. **Geolocation Lookup**:  
    Pickup location IDs were mapped to geographic coordinates (latitude, longitude) using the NYC Taxi Zone dataset and Google Maps Geocoding API.
    
-2. **Merging Weather Data**:  
+3. **Merging Weather Data**:  
    Weather data (temperature, wind speed, precipitation) was merged based on the geolocated pickup location and time using the Meteostat dataset.
 
-3. **Handling Missing Data**:  
-   Variables such as `snow`, `wpgt`, and `tsun` had many missing values. These were removed during replaced with appropriate default values (e.g., `0` for snow in cases without snowfall).
+4. **Handling Missing Data**:  
+   Variables such as `snow`, `wpgt`, and `tsun` had many missing values. These coumns were removed altogether as there were too many missing values for the variable to be meaningful.
 
-4. **Time of Day Labeling**:  
-   To make for a more meanignful analysis, a new categorical variable `PeriodOfDay` (Morning, Midday, Evening) derived from the `pickup_datetime` was added to the dataset to better analyze temporal patterns.
+5. **Time of Day Labeling**:  
+   To make for a more interpretable analysis, a new categorical variable `PeriodOfDay` (Morning, Midday, Evening) derived from the `pickup_datetime` was added to the dataset to better analyze temporal patterns.
 
-5. **Filtering Data to Specific Time Points**:  
-   Given the large size of the original dataset, which includes trips recorded every minute throughout the day, the analysis focuses on three specific time points—**8:00 AM, 12:00 PM, and 6:00 PM**. These times were   selected to represent key periods of the day when ride-hailing activity is likely to vary based on weather and other factors. By limiting the dataset to these specific times, we maintain a manageable dataset size while still capturing meaningful patterns in FHV demand.
+6. **Created New Tip_Percentage Variable**:
+   To make a more meaningful interpretation of tips, a new quantative varirable `tip_percentage` was derived from dividing tips by base passenger fare (tips/base passenger fare*100) to better analyzing tipping trends.
+
 
 
 ## Variable Descriptions
