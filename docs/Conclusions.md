@@ -5,7 +5,7 @@ title: "Conclusion" # Title of the page
 
 # Conclusion
 
-## Key Findings:
+## **Key Findings**:
 
 The analysis of FHV ride pattern data through dimensionality reduction techniques and spatial visualizations reveals insights into tipping behavior, ride characteristics, weather conditions, and demand patterns across New York City. Here are the key conclusions:
 
@@ -27,7 +27,7 @@ Hexbin maps revealed shifting patterns of ride-hailing demand across New York Ci
 
 --- 
 
-## Limitations
+## **Limitations**
 
 While the analysis provided valuable insights, there are several limitations to consider:
 
@@ -39,7 +39,7 @@ While the analysis provided valuable insights, there are several limitations to 
 
 ---
 
-## Recommendations for Future Research
+## **Recommendations for Future Research**
 
 The analysis has provided valuable insights into ride-hailing behavior in New York City, but there are several areas that warrant further exploration:
 
@@ -54,7 +54,7 @@ The analysis has provided valuable insights into ride-hailing behavior in New Yo
 
 ---
 
-## Final Thoughts
+## **Final Thoughts**
 
 This analysis offers a detailed exploration of ride pattern and tipping behavior in New York City in 2023. By employing dimensionality reduction techniques and spatial visualization, the study has highlighted the main factors driving ride demand and uncovered patterns related to both geography and timing. 
 
