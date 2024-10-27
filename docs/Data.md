@@ -5,7 +5,7 @@ title: "Data Description" # Title of the page
 
 # Data Description
 
-## Dataset Background
+## **Dataset Background**
 - This project utilizes high-volume for-hire vehicle (FHV) or taxi trip data in New York City from **October 15, 2023, to November 15, 2023**, focusing on trips that occurred at three specific times:
    - **8:00-8:03 AM (Morning)**
    - **12:00-12:03 PM (Noon)**
@@ -16,7 +16,7 @@ title: "Data Description" # Title of the page
 
 ---
 
-## Key Steps for Data Cleaning and Pre-Processing
+## **Key Steps for Data Cleaning and Pre-Processing**
 The dataset contains **6,939 observations**, each representing a three minute interval of ride-hiring activity starting from the pickup times. Each trip is linked to weather data based on the pickup location's latitude and longitude, retrieved through the Meteostat database. Each case is linked to meteorological data based on the trip's pickup location, which was geocoded using Google Maps API. Weather conditions, including temperature, wind speed, and precipitation, were sourced from the Meteostat API. 
 
 1. **Filtering Data to Specific Time Points**:  
@@ -39,7 +39,7 @@ The dataset contains **6,939 observations**, each representing a three minute in
 
 ---
 
-## Variable Descriptions
+## **Variable Descriptions**
 
 
 | Variable Name          | Variable Label                                           | Valid Range/Code                                | Source                          |
@@ -82,7 +82,7 @@ The dataset contains **6,939 observations**, each representing a three minute in
 
 ---
 
-## Data Sources
+## **Data Sources**
 
 1. **NYC FHV Trip Data (October 2023 - November 2023)**  
    [NYC 2023 High-Volume FHV Trip Data](https://data.cityofnewyork.us/Transportation/2023-High-Volume-FHV-Trip-Data/u253-aew4/data_preview)  
