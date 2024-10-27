@@ -6,11 +6,16 @@ title: "Data Description" # Title of the page
 # Data Description
 
 ## Dataset Background
-This project utilizes high-volume for-hire vehicle (FHV) or taxi trip data in New York City from **October 15, 2023, to November 15, 2023**, focusing on trips that occurred at three specific times: **8:00-8:03 AM (Morning), 12:00-12:03 PM (Midday), and 6:00-6:03 PM (evening)**. These time windows were selected to capture key parts of the day (morning, midday, evening) while reducing the overall dataset size. Since the full dataset includes millions of trips, limiting the data to these specific times helps ensure a manageable dataset for analysis. In addition, the dataset contains 35 variables after cleaning the data which provide detailed information on pickup locations, timestamps, and various meteorological conditions during each trip. The goal is to explore potential relationships between weather patterns and ride-hailing demand across NYC, identifying spatial and temporal clusters that may help optimize taxi operations.
-
-The dataset contains **6,939 observations**, each representing a three minute interval of ride-hiring activity starting from the pickup times. Each trip is linked to weather data based on the pickup location's latitude and longitude, retrieved through the Meteostat database. Each case is linked to meteorological data based on the trip's pickup location, which was geocoded using Google Maps API. Weather conditions, including temperature, wind speed, and precipitation, were sourced from the Meteostat API. 
+- This project utilizes high-volume for-hire vehicle (FHV) or taxi trip data in New York City from **October 15, 2023, to November 15, 2023**, focusing on trips that occurred at three specific times:
+   - **8:00-8:03 AM (Morning)**
+   - **12:00-12:03 PM (Midday)**
+   - **6:00-6:03 PM (evening)**
+- These time windows were selected to capture key parts of the day (morning, midday, evening) while reducing the overall dataset size.
+- Since the full dataset includes millions of trips, limiting the data to these specific times helps ensure a manageable dataset for analysis. In addition, the dataset contains 35 variables after cleaning the data which provide detailed information on pickup locations, timestamps, and various meteorological conditions during each trip.
+- The goal is to explore potential relationships between weather patterns and ride-hailing demand across NYC, identifying spatial and temporal clusters that may help optimize taxi operations.
 
 ## Key Steps for Data Cleaning and Pre-Processing
+The dataset contains **6,939 observations**, each representing a three minute interval of ride-hiring activity starting from the pickup times. Each trip is linked to weather data based on the pickup location's latitude and longitude, retrieved through the Meteostat database. Each case is linked to meteorological data based on the trip's pickup location, which was geocoded using Google Maps API. Weather conditions, including temperature, wind speed, and precipitation, were sourced from the Meteostat API. 
 
 1. **Filtering Data to Specific Time Points**:  
    Given the large size of the original dataset, which includes trips recorded every minute throughout the day, the analysis focuses on three specific time points—**8:00 AM, 12:00 PM, and 6:00 PM**—for a selected month, from mid-October to mid-November. This period was chosen due to its high variability in weather conditions, providing an opportunity to explore how weather impacts ride-hailing behavior while minimizing the number of observations. These times were selected to represent key periods of the day when ride-hailing activity is likely to fluctuate based on traffic patterns and other factors.
