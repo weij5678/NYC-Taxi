@@ -14,6 +14,8 @@ title: "Data Description" # Title of the page
 - Since the full dataset includes millions of trips, limiting the data to these specific times helps ensure a manageable dataset for analysis. In addition, the dataset contains 35 variables after cleaning the data which provide detailed information on pickup locations, timestamps, and various meteorological conditions during each trip.
 - The goal is to explore potential relationships between weather patterns and ride-hailing demand across NYC, identifying spatial and temporal clusters that may help optimize taxi operations.
 
+---
+
 ## Key Steps for Data Cleaning and Pre-Processing
 The dataset contains **6,939 observations**, each representing a three minute interval of ride-hiring activity starting from the pickup times. Each trip is linked to weather data based on the pickup location's latitude and longitude, retrieved through the Meteostat database. Each case is linked to meteorological data based on the trip's pickup location, which was geocoded using Google Maps API. Weather conditions, including temperature, wind speed, and precipitation, were sourced from the Meteostat API. 
 
@@ -35,7 +37,7 @@ The dataset contains **6,939 observations**, each representing a three minute in
 6. **Created New Tip_Percentage Variable**:
    To make a more meaningful interpretation of tips, a new quantative varirable `tip_percentage` was derived from dividing tips by base passenger fare (tips/base passenger fare*100) to better analyzing tipping trends.
 
-
+---
 
 ## Variable Descriptions
 
@@ -78,6 +80,7 @@ The dataset contains **6,939 observations**, each representing a three minute in
 | `doloc_lat`             | Longitude of Dropoff Location Id                        | Decimal, range: '-74.2' to '-73.6'               | Google Maps API                |
 | `tip_percentage`        | Percentage of Tip Recieved based on base fare/tip       | Decimal, range: '0' to '100'                     | Derived from 'tips'            |
 
+---
 
 ## Data Sources
 
