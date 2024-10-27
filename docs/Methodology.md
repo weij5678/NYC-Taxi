@@ -8,6 +8,7 @@ layout: default
 ## 1. **Principal Component Analysis (PCA)**
 - **Motivation**:
   -   Since the datasets consists of many quantitative variables, PCA was applied to reduce dimensionality and identify key variables influencing ride behavior.
+  -   PCA would help with predicting a linear model for tipping behaviors
 - **Methodology**:
   - Initially, separate PCA analyses were performed for the morning, noon, and evening time periods, focusing on variables such as trip duration, trip distance, fare, and weather conditions, excluding the tip percentage variable. This approach aimed to explore how factors driving ride-hailing behavior vary by time of day.
   - However, upon reviewing the visualizations, it was found that there were no significant differences between the time-specific PCA analyses.
