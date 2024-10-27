@@ -8,7 +8,8 @@ layout: default
 ## 1. **Principal Component Analysis (PCA)**
 - Since the datasets consists of many quantitative variables, PCA was applied to reduce dimensionality and identify key variables influencing ride behavior.
 - Initially, separate PCA analyses were performed for the morning, noon, and evening time periods, focusing on variables such as trip duration, trip distance, fare, and weather conditions, excluding the tip percentage variable. This approach aimed to explore how factors driving ride-hailing behavior vary by time of day.
-- However, upon reviewing the visualizations, it was found that there were no significant differences between the time-specific PCA analyses. As a result, a combined PCA was performed, excluding time as a factor, but still excluding the tip percentage variable in order to perform a regression on tip percentages.
+- However, upon reviewing the visualizations, it was found that there were no significant differences between the time-specific PCA analyses.
+- As a result, a combined PCA was performed, excluding time as a factor, but still excluding the tip percentage variable in order to perform a regression on tip percentages.
 
 - **PCA Visualizations**: 
   - **Screeplot**: Used to determine the number of principal components to retain.
@@ -22,7 +23,8 @@ layout: default
 ---
 
 ## 2. **Canonical Correlation Analysis (CCA)**
-CCA was applied to explore the relationships between ride characteristics and weather conditions. Seven weather variables (temperature, dew point, wind speed, humidity, precipitation, wind direction, air pressure) and five trip characteristics (trip duration, trip distance, base passenger fare, tolls, tip percentage) were examined to determine if weather conditions significantly influence trip characteristics.
+- CCA was applied to explore the relationships between ride characteristics and weather conditions.
+- Seven weather variables (temperature, dew point, wind speed, humidity, precipitation, wind direction, air pressure) and five trip characteristics (trip duration, trip distance, base passenger fare, tolls, tip percentage) were examined to determine if weather conditions significantly influence trip characteristics.
 
 - **Correlation Matrix**: 
   - Visualized the canonical correlation matrix to examine relationships between weather variables and trip characteristics.
@@ -40,7 +42,11 @@ CCA was applied to explore the relationships between ride characteristics and we
 ---
 
 ## 3. **Maps for Pickup and Drop-off Locations**
-Hexbin maps were used to visualize the spatial distribution of pickup and drop-off locations across New York City at different times of the day (morning, noon, evening). Initially, points were plotted on the NYC map and distinguished by color for different times. However, hexbin plots were preferred because they effectively manage dense spatial data by aggregating ride data into hexagonal bins. This approach makes it easier to identify geographic hotspots and observe patterns in ride demand. Hexbin maps were chosen specifically for their ability to declutter dense spatial data and reveal meaningful geographic patterns. 
+- Hexbin maps were used to visualize the spatial distribution of pickup and drop-off locations across New York City at different times of the day (morning, noon, evening).
+- Initially, points were plotted on the NYC map and distinguished by color for different times.
+- However, hexbin plots were preferred because they effectively manage dense spatial data by aggregating ride data into hexagonal bins.
+  - This approach makes it easier to identify geographic hotspots and observe patterns in ride demand.
+- Hexbin maps were chosen specifically for their ability to declutter dense spatial data and reveal meaningful geographic patterns. 
 
 - **Hexbin Map of Pickup anf Drop off Locations**: 
   - Created separate hexbin maps for morning, noon, and evening to observe the temporal and spatial variations in ride activity.
