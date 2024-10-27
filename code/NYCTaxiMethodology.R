@@ -4,7 +4,7 @@
 ## Reading/Filtering the Data: -----------------------------------------------------------------------
 library(readr)
 taxi <- read.csv("/Users/weiran/MultiProject/final/2023NYC_FHV.csv")
-taxi <- taxi[ , -c(1, 23, 28, 31, 33, 34)]
+taxi <- taxi[, !names(taxi) %in% c("Unnamed..0", "access_a_ride_flag", "snow", "wpgt", "coco", "tsun")]
 taxi <- taxi[ , colSums(is.na(taxi)) == 0]
 taxi$tip_percentage <- (taxi$tips / taxi$base_passenger_fare) * 100
 
