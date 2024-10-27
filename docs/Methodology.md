@@ -8,7 +8,8 @@ layout: default
 ## 1. **Principal Component Analysis (PCA)**
 - **Motivation**:
   -   Since the datasets consists of many quantitative variables, PCA was applied to reduce dimensionality and identify key variables influencing ride behavior.
-  -   PCA would help with predicting a linear model for tipping behaviors of taxi commuters
+  -   PCA would help with predicting a linear model for tipping behaviors of taxi commuters.
+    
 - **Methodology**:
   - Initially, separate PCA analyses were performed for the morning, noon, and evening time periods, focusing on variables such as trip duration, trip distance, fare, and weather conditions, excluding the tip percentage variable. This approach aimed to explore how factors driving ride-hailing behavior vary by time of day.
   - However, upon reviewing the visualizations, it was found that there were no significant differences between the time-specific PCA analyses.
@@ -49,8 +50,8 @@ layout: default
 
 ## 3. **Maps for Pickup and Drop-off Locations**
 - **Motivation**:
--   Hexbin maps were used to visualize the spatial distribution of pickup and drop-off locations across New York City at different times of the day (morning, noon, evening).
--   Hexbin maps were chosen specifically for their ability to declutter dense spatial data and reveal meaningful geographic patterns. 
+  - Hexbin maps were used to visualize the spatial distribution of pickup and drop-off locations across New York City at different times of the day (morning, noon, evening).
+  - Hexbin maps were chosen specifically for their ability to declutter dense spatial data and reveal meaningful geographic patterns. 
 
 - **Methodology**:
   - Initially, points were plotted on the NYC map and distinguished by color for different times.
