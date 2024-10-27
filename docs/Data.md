@@ -8,8 +8,8 @@ title: "Data Description" # Title of the page
 ## Dataset Background
 - This project utilizes high-volume for-hire vehicle (FHV) or taxi trip data in New York City from **October 15, 2023, to November 15, 2023**, focusing on trips that occurred at three specific times:
    - **8:00-8:03 AM (Morning)**
-   - **12:00-12:03 PM (Midday)**
-   - **6:00-6:03 PM (evening)**
+   - **12:00-12:03 PM (Noon)**
+   - **6:00-6:03 PM (Evening)**
 - These time windows were selected to capture key parts of the day (morning, midday, evening) while reducing the overall dataset size.
 - Since the full dataset includes millions of trips, limiting the data to these specific times helps ensure a manageable dataset for analysis. In addition, the dataset contains 35 variables after cleaning the data which provide detailed information on pickup locations, timestamps, and various meteorological conditions during each trip.
 - The goal is to explore potential relationships between weather patterns and ride-hailing demand across NYC, identifying spatial and temporal clusters that may help optimize taxi operations.
