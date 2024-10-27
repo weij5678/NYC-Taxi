@@ -26,8 +26,11 @@ layout: default
 ---
 
 ## 2. **Canonical Correlation Analysis (CCA)**
-- CCA was applied to explore the relationships between ride characteristics and weather conditions.
-- Seven weather variables (temperature, dew point, wind speed, humidity, precipitation, wind direction, air pressure) and five trip characteristics (trip duration, trip distance, base passenger fare, tolls, tip percentage) were examined to determine if weather conditions significantly influence trip characteristics.
+- **Motivation**:
+  - After exploring tipping behavior, CCA was applied to closely examine the relationships between ride characteristics and weather conditions.
+
+- **Methodology**:
+  - Seven weather variables (temperature, dew point, wind speed, humidity, precipitation, wind direction, air pressure) and five trip characteristics (trip duration, trip distance, base passenger fare, tolls, tip percentage) were examined to determine if weather conditions significantly influence trip characteristics.
 
 - **Correlation Matrix**: 
   - Visualized the canonical correlation matrix to examine relationships between weather variables and trip characteristics.
@@ -45,13 +48,17 @@ layout: default
 ---
 
 ## 3. **Maps for Pickup and Drop-off Locations**
-- Hexbin maps were used to visualize the spatial distribution of pickup and drop-off locations across New York City at different times of the day (morning, noon, evening).
-- Initially, points were plotted on the NYC map and distinguished by color for different times.
-- However, hexbin plots were preferred because they effectively manage dense spatial data by aggregating ride data into hexagonal bins.
-  - This approach makes it easier to identify geographic hotspots and observe patterns in ride demand.
-- Hexbin maps were chosen specifically for their ability to declutter dense spatial data and reveal meaningful geographic patterns. 
+- **Motivation**:
+-   Hexbin maps were used to visualize the spatial distribution of pickup and drop-off locations across New York City at different times of the day (morning, noon, evening).
+-   Hexbin maps were chosen specifically for their ability to declutter dense spatial data and reveal meaningful geographic patterns. 
 
-- **Hexbin Map of Pickup anf Drop off Locations**: 
+- **Methodology**:
+  - Initially, points were plotted on the NYC map and distinguished by color for different times.
+  - However, hexbin plots were plotted next because they effectively manage dense spatial data by aggregating ride data into hexagonal bins.
+    - This approach makes it easier to identify geographic hotspots and observe patterns in ride demand.
+  - The lighter the color of the hexbin, the more popular the pickup/dropoff location is at the time of day
+  
+- **Hexbin Map of Pickup and Drop off Locations**: 
   - Created separate hexbin maps for morning, noon, and evening to observe the temporal and spatial variations in ride activity.
   - Interpreted the patterns to identify where ride demand is concentrated throughout the day.
  
