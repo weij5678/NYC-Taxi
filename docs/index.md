@@ -12,14 +12,12 @@ Ride-hailing services, including For-Hire Vehicles (FHVs) like taxis, have becom
 - **Tools Used**: R, Python 
 - **Statistical Methods**: Principal Component Analysis and Canonical Correlation Analysis
 
----
 
 ### **Key Research Questions**:
 - How are weather conditions (e.g., temperature, precipitation, wind) associated with the demand for FHV services in New York City?
 - Are there specific zones or regions in the city where the impact of weather on demand is more pronounced?
 - How does ride-hailing patterns change across different times of the day under varying weather conditions?
 
----
 
 ## **Navigation**
 - [Data Description](Data.md)
@@ -28,7 +26,6 @@ Ride-hailing services, including For-Hire Vehicles (FHVs) like taxis, have becom
 - [Conclusion](Conclusions.md)
 - [Code and References](https://github.com/weij5678/NYC-Taxi/tree/main)
   
----
 
 ## **Key Findings**
 
@@ -36,7 +33,6 @@ Ride-hailing services, including For-Hire Vehicles (FHVs) like taxis, have becom
 - There was a weak negative association between tipping and ride characterstics including trip duration, distance traveled, etc.
 - CCA uncovered a weak relationship between weather conditions and trip characteristics
 
----
 
 ## **Visualizations**
 
