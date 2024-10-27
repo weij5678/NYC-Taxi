@@ -3,7 +3,7 @@ title: "Home" # Title of the page
 layout: default # This tells Jekyll to use the default layout (from the theme)
 ---
 
-# Exploring 2023 NYC Taxi Demand Patterns
+# Exploring 2023 NYC Taxi Ride Patterns
 
 ## Project Overview
 Ride-hailing services, including For-Hire Vehicles (FHVs) like taxis, have become an integral part of urban transportation in cities like New York. With unpredictable weather patterns in the city, there is interest in understanding how external factors like weather conditions influence ride-hailing demand. The motivation for this project is to better understand the FHV ride patterns and how weather might affect commuters who take those means of transportation based on time of day and location. 
@@ -14,9 +14,9 @@ Ride-hailing services, including For-Hire Vehicles (FHVs) like taxis, have becom
 
 
 ### Key Research Questions:
-- How do weather conditions (e.g., temperature, precipitation, wind) affect the demand for FHV services in New York City?
+- How are weather conditions (e.g., temperature, precipitation, wind) associated with the demand for FHV services in New York City?
 - Are there specific zones or regions in the city where the impact of weather on demand is more pronounced?
-- How does ride-hailing demand change across different times of the day under varying weather conditions?
+- How does ride-hailing patterns change across different times of the day under varying weather conditions?
 
 
 ## Navigation
@@ -28,8 +28,8 @@ Ride-hailing services, including For-Hire Vehicles (FHVs) like taxis, have becom
   
 ## Key Findings
 
-- Longer trips with higher fares are contributors to FHV ride behavior, while weather and traffic conditions also influence ride demand, although to a lesser degree.
-- There was a weak correlation between tipping and ride characterstics including trip duration, distance traveled, etc.
+- Longer trips with higher fares are contributors to FHV ride pattern behavior, while weather and traffic conditions also influence ride demand, although to a lesser degree.
+- There was a weak negative association between tipping and ride characterstics including trip duration, distance traveled, etc.
 - CCA uncovered a weak relationship between weather conditions and trip characteristics
 
 
@@ -43,7 +43,7 @@ Ride-hailing services, including For-Hire Vehicles (FHVs) like taxis, have becom
 ## Future Work
 
 Potential extensions of this analysis include:
-- Improving the Regression Models
+- Improving/transforming the Regression Models
 - Better Weather Data Integration
 - Further Exploration of Spatial Patterns
 - Rider Behavior and Economic Variables
